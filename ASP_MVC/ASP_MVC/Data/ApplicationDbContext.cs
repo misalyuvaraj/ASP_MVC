@@ -18,9 +18,9 @@ namespace ASP_MVC.Data
 
             modelBuilder.Entity<Category>().HasData(
 
-                new Category { Id = 1, Name="Action"},
-                new Category { Id = 2, Name="Scrifi" },
-                new Category { Id = 3 , Name = "History"}
+                new Category { Id = 1, Name="Action", DisplayOrder=1},
+                new Category { Id = 2, Name="Scrifi", DisplayOrder=2},
+                new Category { Id = 3 , Name = "History", DisplayOrder = 3}
                 );
         }
     }
